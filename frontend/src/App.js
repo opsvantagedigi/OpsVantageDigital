@@ -1145,26 +1145,26 @@ const About = () => {
                   <h4 className="text-lg lg:text-xl font-bold text-gray-800 dark:text-white mb-3 lg:mb-4">About Ajay</h4>
                   <p className="text-gray-700 dark:text-gray-300 mb-4 lg:mb-6 font-medium leading-relaxed text-sm lg:text-base">{founder.bio}</p>
                   
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6 mb-4 lg:mb-6">
                     <div>
-                      <h5 className="font-semibold text-gray-800 mb-3">🎓 Education & Credentials</h5>
-                      <p className="text-gray-700 text-sm">{founder.education}</p>
-                      <p className="text-gray-700 text-sm">Master Certificate in Business Management</p>
-                      <p className="text-gray-700 text-sm">Cornell Institute Business Units</p>
+                      <h5 className="font-semibold text-gray-800 dark:text-white mb-2 lg:mb-3 text-sm lg:text-base">🎓 Education & Credentials</h5>
+                      <p className="text-gray-700 dark:text-gray-300 text-xs lg:text-sm">{founder.education}</p>
+                      <p className="text-gray-700 dark:text-gray-300 text-xs lg:text-sm">Master Certificate in Business Management</p>
+                      <p className="text-gray-700 dark:text-gray-300 text-xs lg:text-sm">Cornell Institute Business Units</p>
                     </div>
                     <div>
-                      <h5 className="font-semibold text-gray-800 mb-3">💼 Experience</h5>
-                      <p className="text-gray-700 text-sm">{founder.experience}</p>
-                      <p className="text-gray-700 text-sm">Cross-Industry Expertise</p>
-                      <p className="text-gray-700 text-sm">Leadership & Operations</p>
+                      <h5 className="font-semibold text-gray-800 dark:text-white mb-2 lg:mb-3 text-sm lg:text-base">💼 Experience</h5>
+                      <p className="text-gray-700 dark:text-gray-300 text-xs lg:text-sm">{founder.experience}</p>
+                      <p className="text-gray-700 dark:text-gray-300 text-xs lg:text-sm">Cross-Industry Expertise</p>
+                      <p className="text-gray-700 dark:text-gray-300 text-xs lg:text-sm">Leadership & Operations</p>
                     </div>
                   </div>
 
-                  <div className="mb-6">
-                    <h5 className="font-semibold text-gray-800 mb-3">🚀 Core Expertise</h5>
-                    <div className="flex flex-wrap gap-2">
+                  <div className="mb-4 lg:mb-6">
+                    <h5 className="font-semibold text-gray-800 dark:text-white mb-2 lg:mb-3 text-sm lg:text-base">🚀 Core Expertise</h5>
+                    <div className="flex flex-wrap gap-1 lg:gap-2">
                       {founder.specialties.map((specialty, idx) => (
-                        <span key={idx} className="bg-teal-100 text-teal-800 text-xs px-3 py-1 rounded-full">
+                        <span key={idx} className="bg-teal-100 dark:bg-teal-900 text-teal-800 dark:text-teal-200 text-2xs lg:text-xs px-2 lg:px-3 py-1 rounded-full">
                           {specialty}
                         </span>
                       ))}
