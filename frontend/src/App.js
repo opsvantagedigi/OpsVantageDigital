@@ -1027,7 +1027,9 @@ const About = () => {
                         msUserSelect: 'none',
                         display: 'block',
                         marginLeft: 'auto',
-                        marginRight: 'auto'
+                        marginRight: 'auto',
+                        objectPosition: 'center center',
+                        objectFit: 'cover'
                       }}
                       onContextMenu={(e) => e.preventDefault()}
                       onDragStart={(e) => e.preventDefault()}
