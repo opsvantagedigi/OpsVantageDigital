@@ -1025,7 +1025,7 @@ const About = () => {
                         WebkitUserSelect: 'none',
                         MozUserSelect: 'none',
                         msUserSelect: 'none',
-                        objectPosition: 'center 30%',
+                        objectPosition: 'center 35%',
                         objectFit: 'cover',
                         display: 'block',
                         margin: '0 auto'
