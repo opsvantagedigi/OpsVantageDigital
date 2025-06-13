@@ -65,21 +65,23 @@ function App() {
   useScrollAnimation();
   
   return (
-    <Router>
-      <div className="App">
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/store" element={<DigitalStore />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-        <Footer />
-        <ChatBot />
-      </div>
-    </Router>
+    <DarkModeProvider>
+      <Router>
+        <div className="App min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300">
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/store" element={<DigitalStore />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+          <Footer />
+          <ChatBot />
+        </div>
+      </Router>
+    </DarkModeProvider>
   );
 }
 
