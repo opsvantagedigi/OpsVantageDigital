@@ -303,8 +303,12 @@ const Home = () => {
             ].map((service, index) => (
               <div 
                 key={index}
-                className="service-card group cursor-pointer animate-on-scroll"
-                style={{ animationDelay: `${index * 0.1}s` }}
+                className="service-card group cursor-pointer"
+                style={{ 
+                  animationDelay: `${index * 0.1}s`,
+                  opacity: 1, 
+                  transform: 'translateY(0)' 
+                }}
               >
                 <div className={`service-icon bg-gradient-to-r ${service.color}`}>
                   {service.icon}
