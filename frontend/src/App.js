@@ -883,7 +883,7 @@ const About = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="animate-on-scroll">
               <h2 className="text-4xl font-bold text-gray-800 mb-6">Our Mission</h2>
-              <p className="text-lg text-gray-600 mb-6">
+              <p className="text-lg text-gray-700 mb-6 font-medium">
                 At OpsVantage Digital, we believe every business deserves to harness the power of cutting-edge technology. 
                 Our mission is to bridge the gap between complex AI solutions and practical business applications.
               </p>
