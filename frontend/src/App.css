@@ -364,81 +364,245 @@ body {
   @apply bg-gray-50;
 }
 
-/* Service Cards */
+/* Enhanced Mobile-First Responsive Design */
+
+/* Service Cards - Mobile Optimized with Dark Mode */
 .service-card {
-  @apply bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2;
+  @apply bg-white dark:bg-gray-800 rounded-2xl p-4 sm:p-6 lg:p-8 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2;
   border: 1px solid rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(10px);
 }
 
+.dark .service-card {
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  background: rgba(31, 41, 55, 0.8);
+}
+
 .service-card:hover {
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.9));
+  transform: translateY(-8px) scale(1.02);
+}
+
+.dark .service-card:hover {
+  background: linear-gradient(135deg, rgba(31, 41, 55, 0.95), rgba(55, 65, 81, 0.9));
 }
 
 .service-icon {
-  @apply w-16 h-16 rounded-full flex items-center justify-center text-2xl text-white mb-6 mx-auto;
+  @apply w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 rounded-full flex items-center justify-center text-xl sm:text-2xl text-white mb-4 sm:mb-6 mx-auto;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
-/* Service Detail Cards */
+/* Enhanced Service Detail Cards */
 .service-detail-card {
-  @apply bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-1 overflow-hidden;
+  @apply bg-white dark:bg-gray-800 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-1 overflow-hidden;
   border: 1px solid rgba(20, 184, 166, 0.1);
+}
+
+.dark .service-detail-card {
+  border: 1px solid rgba(20, 184, 166, 0.3);
+  background: rgba(31, 41, 55, 0.9);
 }
 
 .service-detail-card:hover {
   border-color: rgba(20, 184, 166, 0.3);
+  transform: translateY(-4px) scale(1.01);
 }
 
-/* Portfolio Cards */
+.dark .service-detail-card:hover {
+  border-color: rgba(20, 184, 166, 0.5);
+}
+
+/* Portfolio Cards - Enhanced Mobile */
 .portfolio-card {
-  @apply bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 overflow-hidden;
+  @apply bg-white dark:bg-gray-800 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 overflow-hidden;
   border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dark .portfolio-card {
+  border: 1px solid rgba(249, 115, 22, 0.2);
+  background: rgba(31, 41, 55, 0.8);
 }
 
 .portfolio-card:hover {
   border-color: rgba(20, 184, 166, 0.3);
+  transform: translateY(-8px) scale(1.02);
 }
 
-/* Product Cards */
+.dark .portfolio-card:hover {
+  border-color: rgba(249, 115, 22, 0.4);
+}
+
+/* Product Cards - Mobile Enhanced */
 .product-card {
-  @apply bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 overflow-hidden;
+  @apply bg-white dark:bg-gray-800 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 overflow-hidden;
   border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dark .product-card {
+  border: 1px solid rgba(249, 115, 22, 0.2);
+  background: rgba(31, 41, 55, 0.8);
 }
 
 .product-card:hover {
   border-color: rgba(249, 115, 22, 0.3);
+  transform: translateY(-8px) scale(1.02);
+}
+
+.dark .product-card:hover {
+  border-color: rgba(249, 115, 22, 0.4);
 }
 
 .product-featured-card {
-  @apply bg-white rounded-2xl shadow-2xl transition-all duration-500 transform hover:-translate-y-3 overflow-hidden;
+  @apply bg-white dark:bg-gray-800 rounded-2xl shadow-2xl transition-all duration-500 transform hover:-translate-y-3 overflow-hidden;
   border: 1px solid rgba(20, 184, 166, 0.2);
+}
+
+.dark .product-featured-card {
+  border: 1px solid rgba(20, 184, 166, 0.3);
+  background: rgba(31, 41, 55, 0.9);
 }
 
 .product-featured-card:hover {
   border-color: rgba(20, 184, 166, 0.4);
   box-shadow: 0 25px 50px rgba(20, 184, 166, 0.15);
+  transform: translateY(-12px) scale(1.02);
 }
 
-/* Team Cards */
+.dark .product-featured-card:hover {
+  border-color: rgba(20, 184, 166, 0.5);
+  box-shadow: 0 25px 50px rgba(20, 184, 166, 0.2);
+}
+
+/* Team Cards - Enhanced */
 .team-card {
-  @apply bg-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2;
+  @apply bg-white dark:bg-gray-800 rounded-2xl p-4 sm:p-6 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2;
   border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dark .team-card {
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  background: rgba(31, 41, 55, 0.8);
 }
 
 .team-card:hover {
   border-color: rgba(59, 130, 246, 0.3);
+  transform: translateY(-8px) scale(1.02);
 }
 
-/* Contact Form */
+.dark .team-card:hover {
+  border-color: rgba(59, 130, 246, 0.4);
+}
+
+/* Contact Form - Mobile Enhanced */
 .contact-input {
-  @apply w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all duration-300;
+  @apply w-full px-3 py-3 sm:px-4 sm:py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all duration-300;
   background-color: #ffffff !important;
   color: #374151 !important;
 }
 
+.dark .contact-input {
+  background-color: #374151 !important;
+  color: #f3f4f6 !important;
+}
+
 .contact-input:focus {
   box-shadow: 0 0 0 3px rgba(20, 184, 166, 0.1);
+}
+
+/* Enhanced Mobile Typography */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 4rem 0 3rem;
+    min-height: 80vh;
+  }
+  
+  .service-card,
+  .portfolio-card,
+  .product-card,
+  .team-card {
+    margin-bottom: 1.5rem;
+  }
+  
+  .floating-element {
+    display: none;
+  }
+  
+  /* Mobile-specific text sizing */
+  .mobile-title {
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+  
+  .mobile-subtitle {
+    font-size: 1.125rem;
+    line-height: 1.4;
+  }
+  
+  /* Enhanced mobile padding */
+  .mobile-section {
+    padding: 3rem 1rem;
+  }
+}
+
+/* Tablet optimizations */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .service-card,
+  .portfolio-card,
+  .product-card {
+    transform: scale(0.98);
+  }
+  
+  .service-card:hover,
+  .portfolio-card:hover,
+  .product-card:hover {
+    transform: translateY(-6px) scale(1.01);
+  }
+}
+
+/* Large screen enhancements */
+@media (min-width: 1024px) {
+  .service-card:hover,
+  .portfolio-card:hover,
+  .product-card:hover {
+    transform: translateY(-10px) scale(1.03);
+  }
+}
+
+/* Dark Mode Specific Animations */
+.dark .animate-pulse {
+  animation: dark-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes dark-pulse {
+  0%, 100% {
+    opacity: 1;
+    box-shadow: 0 0 20px rgba(20, 184, 166, 0.3);
+  }
+  50% {
+    opacity: .8;
+    box-shadow: 0 0 30px rgba(20, 184, 166, 0.5);
+  }
+}
+
+/* Enhanced Loading States for Dark Mode */
+.dark .skeleton {
+  background: linear-gradient(90deg, #374151 25%, #4b5563 50%, #374151 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+}
+
+/* Mobile-First Touch Interactions */
+@media (hover: none) and (pointer: coarse) {
+  .service-card:active,
+  .portfolio-card:active,
+  .product-card:active {
+    transform: scale(0.98);
+    transition: transform 0.1s ease;
+  }
+  
+  .cta-button:active {
+    transform: scale(0.95);
+  }
 }
 
 /* Ensure contact page content is visible */
