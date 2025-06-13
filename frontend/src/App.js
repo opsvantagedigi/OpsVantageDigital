@@ -253,7 +253,7 @@ const Home = () => {
       {/* Services Preview */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16 animate-on-scroll">
+          <div className="text-center mb-16" style={{opacity: 1, transform: 'translateY(0)'}}>
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
               <span className="text-gray-800">Premium Digital Services</span>
             </h2>
