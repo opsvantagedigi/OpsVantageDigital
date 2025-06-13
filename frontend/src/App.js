@@ -614,7 +614,7 @@ const Portfolio = () => {
                     </span>
                   </div>
                   
-                  <p className="text-gray-600 mb-4">{project.description}</p>
+                  <p className="text-gray-700 mb-4 font-medium">{project.description}</p>
                   
                   <div className="mb-4">
                     <div className="flex flex-wrap gap-2">
