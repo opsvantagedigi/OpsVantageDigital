@@ -936,7 +936,7 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <h1 className="text-4xl md:text-5xl font-bold mb-4 hero-text">About OpsVantage Digital</h1>
           <p className="text-lg max-w-2xl mx-auto hero-description">
-            We're Auckland's premier AI-first digital agency, transforming businesses through innovative technology solutions
+            Founded by Ajay Sidal, a seasoned professional with 12+ years of multi-industry expertise in technology and operations
           </p>
         </div>
       </section>
