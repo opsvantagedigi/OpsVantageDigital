@@ -408,10 +408,22 @@ body {
 /* Contact Form */
 .contact-input {
   @apply w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all duration-300;
+  background-color: #ffffff !important;
+  color: #374151 !important;
 }
 
 .contact-input:focus {
   box-shadow: 0 0 0 3px rgba(20, 184, 166, 0.1);
+}
+
+/* Ensure contact page content is visible */
+.contact-page {
+  min-height: 100vh;
+}
+
+.contact-page section {
+  position: relative;
+  z-index: 1;
 }
 
 /* Scroll Animations */
