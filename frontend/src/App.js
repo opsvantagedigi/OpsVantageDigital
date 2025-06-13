@@ -1277,12 +1277,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           {/* Logo and Description */}
           <div className="col-span-1 md:col-span-2">
-            <Link to="/" className="flex items-center space-x-2 mb-6">
+            <Link to="/" className="flex items-center space-x-3 mb-6">
               <div className="flex items-center">
-                <span className="text-2xl font-bold text-teal-400">Ops</span>
-                <span className="text-2xl font-bold text-orange-400">Vantage</span>
+                <span className="text-3xl font-bold text-teal-400">Ops</span>
+                <span className="text-3xl font-bold text-orange-400">Vantage</span>
               </div>
-              <div className="text-2xl font-bold text-blue-400">Digital</div>
+              <div className="text-3xl font-bold text-blue-400">Digital</div>
             </Link>
             <p className="text-gray-300 mb-6 max-w-md">
               Auckland's premier AI-first digital agency, transforming businesses through innovative technology solutions and strategic digital excellence.
