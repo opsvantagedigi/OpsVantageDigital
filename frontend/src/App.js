@@ -887,7 +887,7 @@ const About = () => {
                 At OpsVantage Digital, we believe every business deserves to harness the power of cutting-edge technology. 
                 Our mission is to bridge the gap between complex AI solutions and practical business applications.
               </p>
-              <p className="text-lg text-gray-600 mb-6">
+              <p className="text-lg text-gray-700 mb-6 font-medium">
                 We're not just developers or consultants – we're your strategic partners in digital transformation, 
                 committed to delivering solutions that drive real, measurable results.
               </p>
