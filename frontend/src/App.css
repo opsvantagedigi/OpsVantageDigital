@@ -113,11 +113,22 @@ body {
 /* Hero Section */
 .hero-section {
   background: linear-gradient(135deg, 
-    rgba(20, 184, 166, 0.9) 0%, 
-    rgba(59, 130, 246, 0.9) 50%, 
-    rgba(249, 115, 22, 0.9) 100%);
+    rgba(20, 184, 166, 0.95) 0%, 
+    rgba(59, 130, 246, 0.95) 50%, 
+    rgba(249, 115, 22, 0.95) 100%);
   position: relative;
   overflow: hidden;
+}
+
+.hero-section::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
 }
 
 .hero-section::before {
