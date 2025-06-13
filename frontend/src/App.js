@@ -202,7 +202,7 @@ const Home = () => {
         ></div>
         
         <ParallaxSection className="relative z-10 text-center px-4 max-w-6xl mx-auto">
-          <div className="space-y-8 animate-fade-in-up">
+          <div className="space-y-8" style={{opacity: 1, transform: 'translateY(0)'}}>
             <h1 className="text-5xl md:text-7xl font-bold leading-tight hero-text">
               <span className="text-white">Transforming Businesses with</span>
               <br />
