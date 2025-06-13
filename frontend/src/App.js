@@ -859,32 +859,52 @@ const DigitalStore = () => {
 const About = () => {
   const team = [
     {
-      name: "Sarah Chen",
-      role: "CEO & AI Strategist",
+      name: "James Mitchell",
+      role: "Founder & CEO",
       image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
-      bio: "Leading digital transformation with 10+ years in AI and business strategy",
-      linkedin: "#"
+      bio: "Former Google AI researcher with 12+ years building enterprise AI solutions. Founded OpsVantage Digital to democratize AI for Auckland businesses.",
+      linkedin: "#",
+      expertise: "AI Strategy, Business Development"
     },
     {
-      name: "Marcus Thompson",
-      role: "CTO & Lead Developer",
+      name: "Dr. Sarah Kim",
+      role: "Chief Technology Officer",
       image: "https://images.unsplash.com/photo-1666698809123-44e998e93f23",
-      bio: "Full-stack expert specializing in modern web technologies and system architecture",
-      linkedin: "#"
+      bio: "PhD in Computer Science from University of Auckland. Led AI teams at Xero and Kiwibank. Expert in machine learning and cloud architecture.",
+      linkedin: "#",
+      expertise: "Machine Learning, Cloud Infrastructure"
     },
     {
-      name: "Emily Rodriguez",
-      role: "Creative Director",
+      name: "Michael Chen",
+      role: "Head of Digital Solutions",
       image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
-      bio: "Award-winning designer focused on user experience and brand development",
-      linkedin: "#"
+      bio: "Full-stack architect with expertise in React, Node.js, and AWS. Previously built scalable platforms for ASB Bank and Spark Ventures.",
+      linkedin: "#",
+      expertise: "Web Development, System Architecture"
     },
     {
-      name: "David Kim",
-      role: "AI Engineer",
+      name: "Emma Thompson",
+      role: "AI Product Manager",
       image: "https://images.unsplash.com/photo-1666698809123-44e998e93f23",
-      bio: "Machine learning specialist with expertise in NLP and computer vision",
-      linkedin: "#"
+      bio: "Former Product Manager at Trade Me and Rocket Lab. Specializes in translating complex AI capabilities into user-friendly business solutions.",
+      linkedin: "#",
+      expertise: "Product Strategy, UX/UI Design"
+    },
+    {
+      name: "Alex Rodriguez", 
+      role: "Senior AI Engineer",
+      image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
+      bio: "Machine learning engineer with expertise in NLP, computer vision, and predictive analytics. Built AI models for healthcare and fintech industries.",
+      linkedin: "#",
+      expertise: "NLP, Computer Vision"
+    },
+    {
+      name: "Lisa Wang",
+      role: "Client Success Manager",
+      image: "https://images.unsplash.com/photo-1666698809123-44e998e93f23",
+      bio: "Former McKinsey consultant specializing in digital transformation. Ensures our AI solutions deliver measurable ROI for every client.",
+      linkedin: "#",
+      expertise: "Client Relations, ROI Optimization"
     }
   ];
 
