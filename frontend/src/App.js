@@ -395,10 +395,10 @@ const Home = () => {
                 <div className={`service-icon bg-gradient-to-r ${service.color}`}>
                   {service.icon}
                 </div>
-                <h3 className="text-lg sm:text-xl font-bold mb-3 text-gray-800 dark:text-white group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">
+                <h3 className="text-lg sm:text-xl font-bold mb-3 text-gray-800 dark:text-white group-hover:text-teal-600 dark:group-hover:text-orange-400 transition-colors">
                   {service.title}
                 </h3>
-                <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-sm sm:text-base">
+                <p className="text-gray-700 dark:text-gray-200 leading-relaxed text-sm sm:text-base font-medium">
                   {service.description}
                 </p>
               </div>
