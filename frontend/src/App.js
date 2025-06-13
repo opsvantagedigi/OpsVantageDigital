@@ -721,11 +721,11 @@ const DigitalStore = () => {
   return (
     <div className="store-page pt-20">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-teal-500 to-blue-600 text-white relative">
+      <section className="py-12 bg-gradient-to-br from-teal-500 to-blue-600 text-white relative">
         <div className="absolute inset-0 bg-black bg-opacity-20"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 hero-text">Digital Store</h1>
-          <p className="text-xl max-w-3xl mx-auto hero-description">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 hero-text">Digital Store</h1>
+          <p className="text-lg max-w-2xl mx-auto hero-description">
             Premium courses, e-books, and resources to accelerate your digital transformation journey
           </p>
         </div>
