@@ -1009,16 +1009,29 @@ const About = () => {
                 {/* Profile Image */}
                 <div className="lg:col-span-1 text-center">
                   <div className="relative inline-block">
+                    {/* Futuristic background effect */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-teal-400 via-blue-500 to-orange-400 rounded-full blur-lg opacity-30 scale-110"></div>
+                    <div className="absolute inset-0 bg-gradient-to-br from-teal-500 to-blue-600 rounded-full opacity-20"></div>
+                    
                     <img 
                       src={founder.image} 
                       alt={founder.name}
-                      className="w-48 h-48 rounded-full mx-auto object-cover shadow-lg"
+                      className="relative w-48 h-48 rounded-full mx-auto object-cover shadow-2xl border-4 border-white z-10"
+                      style={{
+                        filter: 'brightness(1.1) contrast(1.1)',
+                        background: 'linear-gradient(135deg, rgba(20,184,166,0.1), rgba(59,130,246,0.1), rgba(249,115,22,0.1))'
+                      }}
                     />
-                    <div className="absolute -bottom-4 -right-4 bg-teal-500 text-white p-3 rounded-full">
+                    
+                    {/* Tech accent elements */}
+                    <div className="absolute -top-2 -right-2 bg-gradient-to-r from-teal-500 to-blue-600 text-white p-3 rounded-full shadow-lg animate-pulse">
                       <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
                         <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                       </svg>
                     </div>
+                    
+                    {/* Animated ring effect */}
+                    <div className="absolute inset-0 rounded-full border-2 border-teal-400 animate-ping opacity-30"></div>
                   </div>
                   <h3 className="text-2xl font-bold text-gray-800 mt-6">{founder.name}</h3>
                   <p className="text-teal-600 font-semibold text-lg">{founder.role}</p>
