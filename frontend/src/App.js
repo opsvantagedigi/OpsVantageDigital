@@ -896,7 +896,7 @@ const About = () => {
   const founder = {
     name: "Ajay Sidal",
     role: "Founder & CEO",
-    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
+    image: "https://drive.google.com/uc?id=1fEkhV5UtNk8ZSJcbmD_kERT2OaXv8YsG",
     education: "Bachelor's Degree in Applied Management - Otago Polytechnic",
     experience: "12+ Years Multi-Industry Experience",
     location: "Grey Lynn, Auckland",
