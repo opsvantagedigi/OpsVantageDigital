@@ -203,13 +203,13 @@ const Home = () => {
         
         <ParallaxSection className="relative z-10 text-center px-4 max-w-6xl mx-auto">
           <div className="space-y-8 animate-fade-in-up">
-            <h1 className="text-5xl md:text-7xl font-bold leading-tight">
+            <h1 className="text-5xl md:text-7xl font-bold leading-tight hero-text">
               <span className="text-white">Transforming Businesses with</span>
               <br />
               <TypingAnimation texts={heroTexts} />
             </h1>
             
-            <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed hero-description">
               We're Auckland's premier AI-first digital agency, delivering cutting-edge solutions 
               that propel your business into the future of digital excellence.
             </p>
