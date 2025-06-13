@@ -1007,8 +1007,8 @@ const About = () => {
             <div className="bg-gradient-to-r from-teal-50 to-blue-50 rounded-2xl p-8 shadow-lg">
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
                 {/* Profile Image */}
-                <div className="lg:col-span-1 text-center">
-                  <div className="relative inline-block">
+                <div className="lg:col-span-1 text-center flex flex-col items-center justify-center">
+                  <div className="relative inline-block mx-auto">
                     {/* Futuristic background effect */}
                     <div className="absolute inset-0 bg-gradient-to-br from-teal-400 via-blue-500 to-orange-400 rounded-full blur-lg opacity-30 scale-110"></div>
                     <div className="absolute inset-0 bg-gradient-to-br from-teal-500 to-blue-600 rounded-full opacity-20"></div>
@@ -1016,7 +1016,7 @@ const About = () => {
                     <img 
                       src={founder.image} 
                       alt={founder.name}
-                      className="relative w-48 h-48 rounded-full mx-auto object-cover shadow-2xl border-4 border-white z-10"
+                      className="relative w-48 h-48 rounded-full object-cover shadow-2xl border-4 border-white z-10 mx-auto block"
                       style={{
                         filter: 'brightness(1.1) contrast(1.1)',
                         background: 'linear-gradient(135deg, rgba(20,184,166,0.1), rgba(59,130,246,0.1), rgba(249,115,22,0.1))',
@@ -1024,7 +1024,10 @@ const About = () => {
                         pointerEvents: 'none',
                         WebkitUserSelect: 'none',
                         MozUserSelect: 'none',
-                        msUserSelect: 'none'
+                        msUserSelect: 'none',
+                        display: 'block',
+                        marginLeft: 'auto',
+                        marginRight: 'auto'
                       }}
                       onContextMenu={(e) => e.preventDefault()}
                       onDragStart={(e) => e.preventDefault()}
