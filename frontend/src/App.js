@@ -337,10 +337,10 @@ const Home = () => {
       {/* CTA Section */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8 animate-on-scroll">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-800">
-            Ready to Transform Your Business?
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            <span className="text-gray-800">Ready to Transform Your Business?</span>
           </h2>
-          <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+          <p className="text-xl text-gray-700 mb-8 leading-relaxed">
             Join industry leaders who trust OpsVantage Digital to deliver exceptional results. 
             Let's discuss how we can accelerate your digital transformation.
           </p>
