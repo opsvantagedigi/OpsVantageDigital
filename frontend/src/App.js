@@ -1004,6 +1004,7 @@ const About = () => {
 
 // Contact Page
 const Contact = () => {
+  console.log('Contact component rendering');
   const [formData, setFormData] = useState({
     name: '',
     email: '',
