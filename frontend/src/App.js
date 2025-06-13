@@ -465,8 +465,12 @@ const Services = () => {
             {services.map((service, index) => (
               <div 
                 key={service.id} 
-                className="service-detail-card animate-on-scroll"
-                style={{ animationDelay: `${index * 0.1}s` }}
+                className="service-detail-card transition-transform duration-300 hover:scale-105"
+                style={{ 
+                  opacity: 1, 
+                  transform: 'translateY(0)',
+                  animationDelay: `${index * 0.1}s` 
+                }}
               >
                 <div className="flex flex-col lg:flex-row overflow-hidden">
                   <div className="lg:w-1/2">
