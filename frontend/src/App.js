@@ -1035,11 +1035,11 @@ const Contact = () => {
       </section>
 
       {/* Contact Information */}
-      <section className="py-20">
+      <section className="py-20 bg-gray-50 min-h-screen">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Form */}
-            <div className="animate-on-scroll">
+            <div className="animate-on-scroll bg-white p-8 rounded-lg shadow-lg">
               <h2 className="text-3xl font-bold text-gray-800 mb-8">Send us a message</h2>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
