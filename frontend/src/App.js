@@ -1019,8 +1019,16 @@ const About = () => {
                       className="relative w-48 h-48 rounded-full mx-auto object-cover shadow-2xl border-4 border-white z-10"
                       style={{
                         filter: 'brightness(1.1) contrast(1.1)',
-                        background: 'linear-gradient(135deg, rgba(20,184,166,0.1), rgba(59,130,246,0.1), rgba(249,115,22,0.1))'
+                        background: 'linear-gradient(135deg, rgba(20,184,166,0.1), rgba(59,130,246,0.1), rgba(249,115,22,0.1))',
+                        userSelect: 'none',
+                        pointerEvents: 'none',
+                        WebkitUserSelect: 'none',
+                        MozUserSelect: 'none',
+                        msUserSelect: 'none'
                       }}
+                      onContextMenu={(e) => e.preventDefault()}
+                      onDragStart={(e) => e.preventDefault()}
+                      draggable={false}
                     />
                     
                     {/* Tech accent elements */}
