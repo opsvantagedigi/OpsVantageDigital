@@ -1049,11 +1049,11 @@ const Contact = () => {
   return (
     <div className="contact-page pt-20" style={{display: 'block', visibility: 'visible', minHeight: '100vh'}}>
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-teal-500 to-blue-600 text-white relative" style={{display: 'block', visibility: 'visible'}}>
+      <section className="py-12 bg-gradient-to-br from-teal-500 to-blue-600 text-white relative" style={{display: 'block', visibility: 'visible'}}>
         <div className="absolute inset-0 bg-black bg-opacity-20"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 hero-text">Get In Touch</h1>
-          <p className="text-xl max-w-3xl mx-auto hero-description">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 hero-text">Get In Touch</h1>
+          <p className="text-lg max-w-2xl mx-auto hero-description">
             Ready to transform your business? Let's discuss how we can help you achieve your digital goals.
           </p>
         </div>
