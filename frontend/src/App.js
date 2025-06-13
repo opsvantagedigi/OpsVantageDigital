@@ -1007,8 +1007,8 @@ const About = () => {
             <div className="bg-gradient-to-r from-teal-50 to-blue-50 rounded-2xl p-8 shadow-lg">
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
                 {/* Profile Image */}
-                <div className="lg:col-span-1 text-center flex flex-col items-center justify-center">
-                  <div className="relative inline-block mx-auto">
+                <div className="lg:col-span-1 text-center flex flex-col items-center justify-center w-full">
+                  <div className="relative inline-block mx-auto" style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
                     {/* Futuristic background effect */}
                     <div className="absolute inset-0 bg-gradient-to-br from-teal-400 via-blue-500 to-orange-400 rounded-full blur-lg opacity-30 scale-110"></div>
                     <div className="absolute inset-0 bg-gradient-to-br from-teal-500 to-blue-600 rounded-full opacity-20"></div>
