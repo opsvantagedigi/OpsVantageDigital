@@ -946,42 +946,45 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div style={{opacity: 1, transform: 'translateY(0)'}}>
-              <h2 className="text-4xl font-bold text-gray-800 mb-6">Our Mission</h2>
+              <h2 className="text-4xl font-bold text-gray-800 mb-6">My Mission</h2>
               <p className="text-lg text-gray-700 mb-6 font-medium">
-                At OpsVantage Digital, we bridge the gap between cutting-edge AI technology and practical business solutions. 
-                Founded in Auckland, we're on a mission to democratize artificial intelligence for businesses of all sizes.
+                As the founder of OpsVantage Digital, I leverage my 12+ years of cross-industry experience to bridge 
+                the gap between complex technology and practical business solutions. My unique background spanning 
+                banking, healthcare, automotive, and telecommunications gives me deep insights into operational challenges.
               </p>
               <p className="text-lg text-gray-700 mb-6 font-medium">
-                We don't just build websites or apps – we create intelligent digital ecosystems that learn, adapt, and evolve 
-                with your business. From AI-powered customer service to predictive analytics, we transform how you operate.
+                Having led digital transformation projects at major organizations like Westpac, ANZ, and Te Whatu Ora, 
+                I understand what works in the real world. I don't just build websites or apps – I create intelligent 
+                digital ecosystems that solve actual business problems and deliver measurable ROI.
               </p>
               <p className="text-lg text-gray-700 mb-6 font-medium">
-                Your success is measured by tangible ROI: increased efficiency, reduced costs, and accelerated growth through 
-                smart technology integration that positions you ahead of the competition.
+                My approach combines operational excellence with cutting-edge technology, ensuring every solution is 
+                both innovative and practical. Whether it's process optimization, customer service enhancement, or 
+                digital transformation, I bring proven experience to accelerate your business growth.
               </p>
               <div className="grid grid-cols-2 gap-8">
                 <div>
-                  <h3 className="text-3xl font-bold text-teal-600">500+</h3>
-                  <p className="text-gray-700 font-medium">AI Solutions Deployed</p>
+                  <h3 className="text-3xl font-bold text-teal-600">12+</h3>
+                  <p className="text-gray-700 font-medium">Years Experience</p>
                 </div>
                 <div>
-                  <h3 className="text-3xl font-bold text-orange-500">150+</h3>
-                  <p className="text-gray-700 font-medium">Businesses Transformed</p>
+                  <h3 className="text-3xl font-bold text-orange-500">5+</h3>
+                  <p className="text-gray-700 font-medium">Industries Mastered</p>
                 </div>
                 <div>
-                  <h3 className="text-3xl font-bold text-blue-600">98%</h3>
-                  <p className="text-gray-700 font-medium">Client Satisfaction</p>
+                  <h3 className="text-3xl font-bold text-blue-600">100+</h3>
+                  <p className="text-gray-700 font-medium">Projects Delivered</p>
                 </div>
                 <div>
-                  <h3 className="text-3xl font-bold text-teal-600">5+</h3>
-                  <p className="text-gray-700 font-medium">Years AI Innovation</p>
+                  <h3 className="text-3xl font-bold text-teal-600">24/7</h3>
+                  <p className="text-gray-700 font-medium">Personal Support</p>
                 </div>
               </div>
             </div>
             <div style={{opacity: 1, transform: 'translateY(0)'}}>
               <img 
                 src="https://images.unsplash.com/photo-1677442136019-21780ecad995" 
-                alt="AI Innovation at OpsVantage Digital"
+                alt="Digital Innovation at OpsVantage Digital"
                 className="rounded-lg shadow-lg w-full h-96 object-cover"
               />
             </div>
