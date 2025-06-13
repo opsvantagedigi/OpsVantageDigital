@@ -354,6 +354,13 @@ const Home = () => {
           <Link 
             to="/contact" 
             className="cta-button primary-cta text-lg px-8 py-4"
+            onClick={(e) => {
+              console.log('Schedule Free Consultation clicked');
+              // Force navigation and scroll to top
+              setTimeout(() => {
+                window.scrollTo(0, 0);
+              }, 100);
+            }}
           >
             Schedule Free Consultation
           </Link>
