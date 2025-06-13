@@ -218,9 +218,12 @@ const Home = () => {
               <Link 
                 to="/contact" 
                 className="cta-button primary-cta text-lg px-10 py-5"
-                onClick={() => {
-                  // Scroll to top when navigating
-                  window.scrollTo(0, 0);
+                onClick={(e) => {
+                  console.log('Start Your Transformation clicked');
+                  // Force navigation and scroll
+                  setTimeout(() => {
+                    window.scrollTo(0, 0);
+                  }, 100);
                 }}
               >
                 Start Your Transformation
