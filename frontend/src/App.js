@@ -993,46 +993,114 @@ const About = () => {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-800 mb-6">Meet Our Expert Team</h2>
+            <h2 className="text-4xl font-bold text-gray-800 mb-6">Meet the Founder</h2>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto font-medium">
-              Auckland's leading AI and digital transformation specialists, with experience from Google, Xero, Trade Me, and Rocket Lab
+              Driven by 12+ years of multi-industry expertise and a passion for digital transformation
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {team.map((member, index) => (
-              <div 
-                key={index} 
-                className="team-card transition-transform duration-300 hover:scale-105"
-                style={{ 
-                  opacity: 1, 
-                  transform: 'translateY(0)',
-                  animationDelay: `${index * 0.1}s` 
-                }}
-              >
-                <div className="relative overflow-hidden rounded-lg mb-4">
-                  <img 
-                    src={member.image} 
-                    alt={member.name}
-                    className="w-full h-64 object-cover transition-transform duration-300 hover:scale-110"
-                  />
+          {/* Founder Profile */}
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-gradient-to-r from-teal-50 to-blue-50 rounded-2xl p-8 shadow-lg">
+              <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
+                {/* Profile Image */}
+                <div className="lg:col-span-1 text-center">
+                  <div className="relative inline-block">
+                    <img 
+                      src={founder.image} 
+                      alt={founder.name}
+                      className="w-48 h-48 rounded-full mx-auto object-cover shadow-lg"
+                    />
+                    <div className="absolute -bottom-4 -right-4 bg-teal-500 text-white p-3 rounded-full">
+                      <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                      </svg>
+                    </div>
+                  </div>
+                  <h3 className="text-2xl font-bold text-gray-800 mt-6">{founder.name}</h3>
+                  <p className="text-teal-600 font-semibold text-lg">{founder.role}</p>
+                  <p className="text-gray-600 text-sm mt-2">{founder.location}</p>
+                  <div className="flex justify-center space-x-4 mt-4">
+                    <a href={`mailto:${founder.email}`} className="text-blue-600 hover:text-blue-800">
+                      📧 Email
+                    </a>
+                    <a href={`tel:${founder.phone}`} className="text-green-600 hover:text-green-800">
+                      📱 Call
+                    </a>
+                  </div>
                 </div>
-                <h3 className="text-xl font-bold text-gray-800 mb-2">{member.name}</h3>
-                <p className="text-teal-600 font-semibold mb-3">{member.role}</p>
-                <p className="text-gray-700 text-sm mb-3 font-medium">{member.bio}</p>
-                {member.expertise && (
-                  <p className="text-orange-600 text-xs font-semibold mb-4">
-                    Expertise: {member.expertise}
-                  </p>
-                )}
-                <a 
-                  href={member.linkedin} 
-                  className="text-blue-600 hover:text-blue-800 transition-colors text-sm font-medium"
-                >
-                  Connect on LinkedIn →
-                </a>
+
+                {/* Profile Details */}
+                <div className="lg:col-span-2">
+                  <h4 className="text-xl font-bold text-gray-800 mb-4">About Ajay</h4>
+                  <p className="text-gray-700 mb-6 font-medium leading-relaxed">{founder.bio}</p>
+                  
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                      <h5 className="font-semibold text-gray-800 mb-3">🎓 Education & Credentials</h5>
+                      <p className="text-gray-700 text-sm">{founder.education}</p>
+                      <p className="text-gray-700 text-sm">Master Certificate in Business Management</p>
+                      <p className="text-gray-700 text-sm">Cornell Institute Business Units</p>
+                    </div>
+                    <div>
+                      <h5 className="font-semibold text-gray-800 mb-3">💼 Experience</h5>
+                      <p className="text-gray-700 text-sm">{founder.experience}</p>
+                      <p className="text-gray-700 text-sm">Cross-Industry Expertise</p>
+                      <p className="text-gray-700 text-sm">Leadership & Operations</p>
+                    </div>
+                  </div>
+
+                  <div className="mb-6">
+                    <h5 className="font-semibold text-gray-800 mb-3">🚀 Core Expertise</h5>
+                    <div className="flex flex-wrap gap-2">
+                      {founder.specialties.map((specialty, idx) => (
+                        <span key={idx} className="bg-teal-100 text-teal-800 text-xs px-3 py-1 rounded-full">
+                          {specialty}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
               </div>
-            ))}
+            </div>
+          </div>
+
+          {/* Career Highlights */}
+          <div className="mt-16">
+            <h3 className="text-3xl font-bold text-gray-800 mb-8 text-center">Career Highlights</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {founder.keyAchievements.map((achievement, idx) => (
+                <div key={idx} className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-orange-500">
+                  <div className="flex items-start">
+                    <div className="bg-orange-100 p-2 rounded-full mr-4">
+                      <svg className="w-5 h-5 text-orange-600" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
+                      </svg>
+                    </div>
+                    <p className="text-gray-700 font-medium">{achievement}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Industry Experience */}
+          <div className="mt-16">
+            <h3 className="text-3xl font-bold text-gray-800 mb-8 text-center">Industry Experience</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {founder.industries.map((industry, idx) => (
+                <div key={idx} className="bg-gradient-to-br from-blue-50 to-teal-50 p-6 rounded-lg text-center">
+                  <div className="text-3xl mb-4">
+                    {idx === 0 && "🏦"}
+                    {idx === 1 && "🏥"}
+                    {idx === 2 && "🚗"}
+                    {idx === 3 && "📡"}
+                    {idx === 4 && "💰"}
+                  </div>
+                  <p className="text-gray-700 font-medium">{industry}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
