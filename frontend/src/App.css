@@ -410,18 +410,19 @@ body {
   @apply bg-gray-50;
 }
 
-/* Enhanced Mobile-First Responsive Design */
+/* Enhanced Mobile-First Responsive Design with Better Dark Mode */
 
-/* Service Cards - Mobile Optimized with Dark Mode */
+/* Service Cards - Enhanced Dark Mode Visibility */
 .service-card {
-  @apply bg-white dark:bg-gray-800 rounded-2xl p-4 sm:p-6 lg:p-8 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2;
+  @apply bg-white dark:bg-gray-700 rounded-2xl p-4 sm:p-6 lg:p-8 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2;
   border: 1px solid rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(10px);
 }
 
 .dark .service-card {
-  border: 1px solid rgba(59, 130, 246, 0.2);
-  background: rgba(31, 41, 55, 0.8);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  background: rgba(55, 65, 81, 0.9);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
 .service-card:hover {
@@ -430,23 +431,33 @@ body {
 }
 
 .dark .service-card:hover {
-  background: linear-gradient(135deg, rgba(31, 41, 55, 0.95), rgba(55, 65, 81, 0.9));
+  background: linear-gradient(135deg, rgba(55, 65, 81, 0.95), rgba(75, 85, 99, 0.9));
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
 }
 
-.service-icon {
-  @apply w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 rounded-full flex items-center justify-center text-xl sm:text-2xl text-white mb-4 sm:mb-6 mx-auto;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+/* Enhanced Service Card Text */
+.dark .service-card h3 {
+  color: #ffffff !important;
+}
+
+.dark .service-card p {
+  color: #d1d5db !important;
+}
+
+.dark .service-card:hover h3 {
+  color: #fb923c !important;
 }
 
 /* Enhanced Service Detail Cards */
 .service-detail-card {
-  @apply bg-white dark:bg-gray-800 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-1 overflow-hidden;
+  @apply bg-white dark:bg-gray-700 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-1 overflow-hidden;
   border: 1px solid rgba(20, 184, 166, 0.1);
 }
 
 .dark .service-detail-card {
-  border: 1px solid rgba(20, 184, 166, 0.3);
-  background: rgba(31, 41, 55, 0.9);
+  border: 1px solid rgba(20, 184, 166, 0.4);
+  background: rgba(55, 65, 81, 0.9);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
 .service-detail-card:hover {
@@ -455,18 +466,20 @@ body {
 }
 
 .dark .service-detail-card:hover {
-  border-color: rgba(20, 184, 166, 0.5);
+  border-color: rgba(20, 184, 166, 0.6);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
 }
 
-/* Portfolio Cards - Enhanced Mobile */
+/* Portfolio Cards - Enhanced Dark Mode */
 .portfolio-card {
-  @apply bg-white dark:bg-gray-800 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 overflow-hidden;
+  @apply bg-white dark:bg-gray-700 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 overflow-hidden;
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .dark .portfolio-card {
-  border: 1px solid rgba(249, 115, 22, 0.2);
-  background: rgba(31, 41, 55, 0.8);
+  border: 1px solid rgba(249, 115, 22, 0.3);
+  background: rgba(55, 65, 81, 0.9);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
 .portfolio-card:hover {
@@ -475,18 +488,20 @@ body {
 }
 
 .dark .portfolio-card:hover {
-  border-color: rgba(249, 115, 22, 0.4);
+  border-color: rgba(249, 115, 22, 0.5);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
 }
 
-/* Product Cards - Mobile Enhanced */
+/* Product Cards - Enhanced Dark Mode */
 .product-card {
-  @apply bg-white dark:bg-gray-800 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 overflow-hidden;
+  @apply bg-white dark:bg-gray-700 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 overflow-hidden;
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .dark .product-card {
-  border: 1px solid rgba(249, 115, 22, 0.2);
-  background: rgba(31, 41, 55, 0.8);
+  border: 1px solid rgba(249, 115, 22, 0.3);
+  background: rgba(55, 65, 81, 0.9);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
 .product-card:hover {
@@ -495,17 +510,19 @@ body {
 }
 
 .dark .product-card:hover {
-  border-color: rgba(249, 115, 22, 0.4);
+  border-color: rgba(249, 115, 22, 0.5);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
 }
 
 .product-featured-card {
-  @apply bg-white dark:bg-gray-800 rounded-2xl shadow-2xl transition-all duration-500 transform hover:-translate-y-3 overflow-hidden;
+  @apply bg-white dark:bg-gray-700 rounded-2xl shadow-2xl transition-all duration-500 transform hover:-translate-y-3 overflow-hidden;
   border: 1px solid rgba(20, 184, 166, 0.2);
 }
 
 .dark .product-featured-card {
-  border: 1px solid rgba(20, 184, 166, 0.3);
-  background: rgba(31, 41, 55, 0.9);
+  border: 1px solid rgba(20, 184, 166, 0.4);
+  background: rgba(55, 65, 81, 0.9);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
 }
 
 .product-featured-card:hover {
@@ -515,19 +532,20 @@ body {
 }
 
 .dark .product-featured-card:hover {
-  border-color: rgba(20, 184, 166, 0.5);
-  box-shadow: 0 25px 50px rgba(20, 184, 166, 0.2);
+  border-color: rgba(20, 184, 166, 0.6);
+  box-shadow: 0 25px 50px rgba(20, 184, 166, 0.3);
 }
 
-/* Team Cards - Enhanced */
+/* Team Cards - Enhanced Dark Mode */
 .team-card {
-  @apply bg-white dark:bg-gray-800 rounded-2xl p-4 sm:p-6 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2;
+  @apply bg-white dark:bg-gray-700 rounded-2xl p-4 sm:p-6 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2;
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .dark .team-card {
-  border: 1px solid rgba(59, 130, 246, 0.2);
-  background: rgba(31, 41, 55, 0.8);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  background: rgba(55, 65, 81, 0.9);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
 .team-card:hover {
@@ -536,23 +554,61 @@ body {
 }
 
 .dark .team-card:hover {
-  border-color: rgba(59, 130, 246, 0.4);
+  border-color: rgba(59, 130, 246, 0.5);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
 }
 
-/* Contact Form - Mobile Enhanced */
+/* Contact Form - Enhanced Dark Mode */
 .contact-input {
-  @apply w-full px-3 py-3 sm:px-4 sm:py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all duration-300;
+  @apply w-full px-3 py-3 sm:px-4 sm:py-3 border border-gray-300 dark:border-gray-500 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all duration-300;
   background-color: #ffffff !important;
   color: #374151 !important;
 }
 
 .dark .contact-input {
-  background-color: #374151 !important;
+  background-color: #4b5563 !important;
   color: #f3f4f6 !important;
+  border-color: #6b7280 !important;
+}
+
+.dark .contact-input:focus {
+  background-color: #374151 !important;
+  border-color: #14b8a6 !important;
+  box-shadow: 0 0 0 3px rgba(20, 184, 166, 0.3);
 }
 
 .contact-input:focus {
   box-shadow: 0 0 0 3px rgba(20, 184, 166, 0.1);
+}
+
+/* Enhanced Dark Mode Typography for All Pages */
+.dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
+  color: #ffffff !important;
+}
+
+.dark p {
+  color: #d1d5db !important;
+}
+
+.dark .font-medium {
+  color: #e5e7eb !important;
+}
+
+.dark .text-lg, .dark .text-xl, .dark .text-2xl {
+  color: #f3f4f6 !important;
+}
+
+/* Specific component overrides for dark mode */
+.dark .bg-gray-50 {
+  background-color: #1f2937 !important;
+}
+
+.dark .bg-gray-100 {
+  background-color: #374151 !important;
+}
+
+.dark .bg-white {
+  background-color: #374151 !important;
 }
 
 /* Enhanced Mobile Typography */
