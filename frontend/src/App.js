@@ -1016,7 +1016,7 @@ const About = () => {
                     <img 
                       src={founder.image} 
                       alt={founder.name}
-                      className="relative w-48 h-48 rounded-full object-cover shadow-2xl border-4 border-white z-10 mx-auto block"
+                      className="relative w-48 h-48 rounded-full object-cover shadow-2xl border-4 border-white z-10"
                       style={{
                         filter: 'brightness(1.1) contrast(1.1)',
                         background: 'linear-gradient(135deg, rgba(20,184,166,0.1), rgba(59,130,246,0.1), rgba(249,115,22,0.1))',
@@ -1025,11 +1025,11 @@ const About = () => {
                         WebkitUserSelect: 'none',
                         MozUserSelect: 'none',
                         msUserSelect: 'none',
+                        objectPosition: '60% center',
+                        objectFit: 'cover',
+                        transform: 'translateX(8px)',
                         display: 'block',
-                        marginLeft: 'auto',
-                        marginRight: 'auto',
-                        objectPosition: 'center center',
-                        objectFit: 'cover'
+                        margin: '0 auto'
                       }}
                       onContextMenu={(e) => e.preventDefault()}
                       onDragStart={(e) => e.preventDefault()}
