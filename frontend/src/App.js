@@ -1127,14 +1127,14 @@ const About = () => {
                     {/* Animated ring effect */}
                     <div className="absolute inset-0 rounded-full border-2 border-teal-400 animate-ping opacity-30"></div>
                   </div>
-                  <h3 className="text-2xl font-bold text-gray-800 mt-6">{founder.name}</h3>
-                  <p className="text-teal-600 font-semibold text-lg">{founder.role}</p>
-                  <p className="text-gray-600 text-sm mt-2">{founder.location}</p>
-                  <div className="flex justify-center space-x-4 mt-4">
-                    <a href={`mailto:${founder.email}`} className="text-blue-600 hover:text-blue-800">
+                  <h3 className="text-xl lg:text-2xl font-bold text-gray-800 dark:text-white mt-4 lg:mt-6">{founder.name}</h3>
+                  <p className="text-teal-600 dark:text-teal-400 font-semibold text-base lg:text-lg">{founder.role}</p>
+                  <p className="text-gray-600 dark:text-gray-400 text-sm mt-2">{founder.location}</p>
+                  <div className="flex justify-center space-x-4 mt-3 lg:mt-4">
+                    <a href={`mailto:${founder.email}`} className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 text-sm">
                       📧 Email
                     </a>
-                    <a href={`tel:${founder.phone}`} className="text-green-600 hover:text-green-800">
+                    <a href={`tel:${founder.phone}`} className="text-green-600 dark:text-green-400 hover:text-green-800 dark:hover:text-green-300 text-sm">
                       📱 Call
                     </a>
                   </div>
@@ -1142,8 +1142,8 @@ const About = () => {
 
                 {/* Profile Details */}
                 <div className="lg:col-span-2">
-                  <h4 className="text-xl font-bold text-gray-800 mb-4">About Ajay</h4>
-                  <p className="text-gray-700 mb-6 font-medium leading-relaxed">{founder.bio}</p>
+                  <h4 className="text-lg lg:text-xl font-bold text-gray-800 dark:text-white mb-3 lg:mb-4">About Ajay</h4>
+                  <p className="text-gray-700 dark:text-gray-300 mb-4 lg:mb-6 font-medium leading-relaxed text-sm lg:text-base">{founder.bio}</p>
                   
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                     <div>
