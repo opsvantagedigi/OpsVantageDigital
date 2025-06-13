@@ -381,55 +381,67 @@ const Services = () => {
       id: 1,
       title: "AI Integration & Automation",
       icon: "🤖",
-      description: "Transform your business processes with intelligent AI solutions",
-      features: ["Chatbot Development", "Process Automation", "Predictive Analytics", "Machine Learning Models"],
+      description: "Transform your business with custom AI solutions that automate processes and drive intelligence",
+      features: ["Custom AI Chatbots", "Process Automation", "Predictive Analytics", "Machine Learning Models", "NLP Integration", "Computer Vision"],
       image: "https://images.unsplash.com/photo-1716436329475-4c55d05383bb",
-      price: "From $5,000"
+      price: "From $8,000",
+      timeline: "4-8 weeks",
+      highlight: "Most Popular"
     },
     {
       id: 2,
-      title: "Next-Gen Web Development",
+      title: "AI-Powered Web Development",
       icon: "🚀",
-      description: "Modern, responsive websites built with cutting-edge technologies",
-      features: ["React/Next.js Development", "Mobile Responsive", "SEO Optimized", "Performance Focused"],
+      description: "Next-generation websites with built-in AI capabilities for superior user experiences",
+      features: ["React/Next.js with AI", "Smart Content Management", "Intelligent SEO", "Performance Optimization", "Real-time Analytics", "AI-driven UX"],
       image: "https://images.unsplash.com/photo-1654618977232-a6c6dea9d1e8",
-      price: "From $3,000"
+      price: "From $5,000",
+      timeline: "3-6 weeks",
+      highlight: "Best Value"
     },
     {
       id: 3,
-      title: "Mobile App Development",
+      title: "Intelligent Mobile Apps",
       icon: "📱",
-      description: "Native and cross-platform mobile applications",
-      features: ["iOS & Android Apps", "React Native", "UI/UX Design", "App Store Optimization"],
+      description: "Smart mobile applications with AI features that learn and adapt to user behavior",
+      features: ["AI-enhanced iOS & Android", "Machine Learning Integration", "Predictive UI/UX", "Smart Notifications", "Voice & Image Recognition", "Offline AI"],
       image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
-      price: "From $8,000"
+      price: "From $12,000",
+      timeline: "6-10 weeks",
+      highlight: "Premium"
     },
     {
       id: 4,
-      title: "Digital Strategy & Consulting",
+      title: "AI Strategy & Digital Transformation",
       icon: "💡",
-      description: "Strategic guidance for your digital transformation",
-      features: ["Digital Audit", "Technology Roadmap", "Growth Strategy", "Innovation Consulting"],
+      description: "Strategic AI implementation roadmap to revolutionize your entire business operation",
+      features: ["AI Readiness Assessment", "Custom AI Strategy", "ROI Modeling", "Change Management", "Team Training", "Ongoing Optimization"],
       image: "https://images.unsplash.com/photo-1666698809123-44e998e93f23",
-      price: "From $2,000"
+      price: "From $3,000",
+      timeline: "2-4 weeks",
+      highlight: "Foundation"
     },
     {
       id: 5,
-      title: "Performance Marketing",
+      title: "AI-Driven Marketing",
       icon: "🎯",
-      description: "Data-driven marketing campaigns that deliver ROI",
-      features: ["Google Ads Management", "Social Media Marketing", "Content Strategy", "Analytics & Reporting"],
+      description: "Intelligent marketing automation with AI-powered insights and personalization",
+      features: ["AI Content Generation", "Predictive Targeting", "Automated A/B Testing", "Customer Journey AI", "Dynamic Pricing", "Performance Prediction"],
       image: "https://images.unsplash.com/photo-1677442136019-21780ecad995",
-      price: "From $1,500/month"
+      price: "From $2,500/month",
+      timeline: "Ongoing",
+      highlight: "ROI Focused"
     },
     {
       id: 6,
-      title: "Custom Software Solutions",
-      icon: "🔧",
-      description: "Bespoke software development for unique business needs",
-      features: ["Enterprise Software", "API Development", "Database Design", "Cloud Integration"],
+      title: "Enterprise AI Solutions",
+      icon: "🏢",
+      description: "Large-scale AI implementations for enterprise operations and decision-making",
+      features: ["Custom AI Platforms", "Enterprise Integration", "Scalable Architecture", "Security & Compliance", "Advanced Analytics", "24/7 Support"],
       image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
-      price: "Custom Quote"
+      price: "Custom Quote",
+      timeline: "8-16 weeks",
+      highlight: "Enterprise"
     }
   ];
 
