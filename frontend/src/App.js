@@ -74,13 +74,13 @@ const Navbar = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link to="/" className="nav-link">Home</Link>
-            <Link to="/services" className="nav-link">Services</Link>
-            <Link to="/portfolio" className="nav-link">Portfolio</Link>
-            <Link to="/store" className="nav-link">Store</Link>
-            <Link to="/about" className="nav-link">About</Link>
-            <Link to="/contact" className="nav-link">Contact</Link>
-            <Link to="/contact" className="bg-gradient-to-r from-teal-500 to-blue-600 text-white px-6 py-2 rounded-full hover:shadow-lg transition-all duration-300 hover:scale-105">
+            <Link to="/" className="nav-link" onClick={() => window.scrollTo(0, 0)}>Home</Link>
+            <Link to="/services" className="nav-link" onClick={() => window.scrollTo(0, 0)}>Services</Link>
+            <Link to="/portfolio" className="nav-link" onClick={() => window.scrollTo(0, 0)}>Portfolio</Link>
+            <Link to="/store" className="nav-link" onClick={() => window.scrollTo(0, 0)}>Store</Link>
+            <Link to="/about" className="nav-link" onClick={() => window.scrollTo(0, 0)}>About</Link>
+            <Link to="/contact" className="nav-link" onClick={() => window.scrollTo(0, 0)}>Contact</Link>
+            <Link to="/contact" className="bg-gradient-to-r from-teal-500 to-blue-600 text-white px-6 py-2 rounded-full hover:shadow-lg transition-all duration-300 hover:scale-105" onClick={() => window.scrollTo(0, 0)}>
               Get Started
             </Link>
           </div>
