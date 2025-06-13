@@ -988,24 +988,43 @@ const About = () => {
             {[
               {
                 icon: "🚀",
-                title: "Innovation First",
-                description: "We stay ahead of technology trends to deliver cutting-edge solutions"
+                title: "AI-First Innovation",
+                description: "We harness cutting-edge AI technologies to transform traditional business processes and create competitive advantages"
               },
               {
                 icon: "🤝",
-                title: "Client Partnership",
-                description: "Your success is our success. We work as your extended team"
+                title: "Client Success Partnership",
+                description: "Your growth is our priority. We become your strategic technology partner, not just a service provider"
               },
               {
                 icon: "⚡",
-                title: "Results Driven",
-                description: "Every solution we deliver is designed to achieve measurable business outcomes"
+                title: "Measurable Results",
+                description: "Every solution we deliver includes clear KPIs and measurable ROI to ensure tangible business impact"
+              },
+              {
+                icon: "🛡️",
+                title: "Reliability & Security",
+                description: "Enterprise-grade security and 99.9% uptime guarantee for all our digital solutions and services"
+              },
+              {
+                icon: "🎯",
+                title: "Agile Excellence",
+                description: "Rapid deployment with iterative improvements to get you to market faster with continuous optimization"
+              },
+              {
+                icon: "🌟",
+                title: "Digital Transformation",
+                description: "End-to-end modernization of your business processes with future-ready technology solutions"
               }
             ].map((value, index) => (
               <div 
                 key={index} 
-                className="text-center p-8 bg-white rounded-lg shadow-lg animate-on-scroll"
-                style={{ animationDelay: `${index * 0.1}s` }}
+                className="text-center p-8 bg-white rounded-lg shadow-lg transition-transform duration-300 hover:scale-105"
+                style={{ 
+                  opacity: 1, 
+                  transform: 'translateY(0)',
+                  animationDelay: `${index * 0.1}s` 
+                }}
               >
                 <div className="text-6xl mb-6">{value.icon}</div>
                 <h3 className="text-2xl font-bold text-gray-800 mb-4">{value.title}</h3>
