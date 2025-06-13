@@ -315,8 +315,9 @@ const Home = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="py-20 bg-gradient-to-r from-teal-500 to-blue-600 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-20 bg-gradient-to-r from-teal-500 to-blue-600 text-white relative">
+        <div className="absolute inset-0 bg-black bg-opacity-10"></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             {[
               { number: "500+", label: "Projects Delivered" },
@@ -325,8 +326,8 @@ const Home = () => {
               { number: "24/7", label: "Support Available" }
             ].map((stat, index) => (
               <div key={index} className="animate-on-scroll">
-                <div className="text-4xl md:text-5xl font-bold mb-2">{stat.number}</div>
-                <div className="text-lg opacity-90">{stat.label}</div>
+                <div className="text-4xl md:text-5xl font-bold mb-2 hero-text">{stat.number}</div>
+                <div className="text-lg hero-description">{stat.label}</div>
               </div>
             ))}
           </div>
