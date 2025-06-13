@@ -64,7 +64,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-3">
+          <Link to="/" className="flex items-center space-x-3" onClick={() => window.scrollTo(0, 0)}>
             <div className="flex items-center">
               <span className="text-4xl font-bold text-teal-500">Ops</span>
               <span className="text-4xl font-bold text-orange-500">Vantage</span>
