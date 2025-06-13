@@ -305,7 +305,7 @@ const Home = () => {
                 <h3 className="text-xl font-bold mb-3 text-gray-800 group-hover:text-teal-600 transition-colors">
                   {service.title}
                 </h3>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-700 leading-relaxed font-medium">
                   {service.description}
                 </p>
               </div>
