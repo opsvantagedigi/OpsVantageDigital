@@ -89,6 +89,7 @@ function App() {
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const { isDarkMode, toggleDarkMode } = useDarkMode();
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
@@ -97,54 +98,98 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white/95 backdrop-blur-sm shadow-lg' : 'bg-transparent'}`}>
+    <nav className={`fixed w-full z-50 transition-all duration-300 ${
+      scrolled 
+        ? 'bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm shadow-lg' 
+        : 'bg-transparent'
+    }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-16 lg:h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3" onClick={() => window.scrollTo(0, 0)}>
             <div className="flex items-center">
-              <span className="text-4xl font-bold text-teal-500">Ops</span>
-              <span className="text-4xl font-bold text-orange-500">Vantage</span>
+              <span className="text-3xl lg:text-4xl font-bold text-teal-500">Ops</span>
+              <span className="text-3xl lg:text-4xl font-bold text-orange-500">Vantage</span>
             </div>
-            <div className="text-4xl font-bold text-blue-600">Digital</div>
+            <div className="text-3xl lg:text-4xl font-bold text-blue-600">Digital</div>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
-            <Link to="/" className="nav-link" onClick={() => window.scrollTo(0, 0)}>Home</Link>
-            <Link to="/services" className="nav-link" onClick={() => window.scrollTo(0, 0)}>Services</Link>
-            <Link to="/portfolio" className="nav-link" onClick={() => window.scrollTo(0, 0)}>Portfolio</Link>
-            <Link to="/store" className="nav-link" onClick={() => window.scrollTo(0, 0)}>Store</Link>
-            <Link to="/about" className="nav-link" onClick={() => window.scrollTo(0, 0)}>About</Link>
-            <Link to="/contact" className="nav-link" onClick={() => window.scrollTo(0, 0)}>Contact</Link>
-            <Link to="/contact" className="bg-gradient-to-r from-teal-500 to-blue-600 text-white px-6 py-2 rounded-full hover:shadow-lg transition-all duration-300 hover:scale-105" onClick={() => window.scrollTo(0, 0)}>
+          <div className="hidden md:flex items-center space-x-6 lg:space-x-8">
+            <Link to="/" className="nav-link dark:text-gray-300 dark:hover:text-teal-400" onClick={() => window.scrollTo(0, 0)}>Home</Link>
+            <Link to="/services" className="nav-link dark:text-gray-300 dark:hover:text-teal-400" onClick={() => window.scrollTo(0, 0)}>Services</Link>
+            <Link to="/portfolio" className="nav-link dark:text-gray-300 dark:hover:text-teal-400" onClick={() => window.scrollTo(0, 0)}>Portfolio</Link>
+            <Link to="/store" className="nav-link dark:text-gray-300 dark:hover:text-teal-400" onClick={() => window.scrollTo(0, 0)}>Store</Link>
+            <Link to="/about" className="nav-link dark:text-gray-300 dark:hover:text-teal-400" onClick={() => window.scrollTo(0, 0)}>About</Link>
+            <Link to="/contact" className="nav-link dark:text-gray-300 dark:hover:text-teal-400" onClick={() => window.scrollTo(0, 0)}>Contact</Link>
+            
+            {/* Dark Mode Toggle */}
+            <button
+              onClick={toggleDarkMode}
+              className="p-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-300"
+              aria-label="Toggle dark mode"
+            >
+              {isDarkMode ? (
+                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clipRule="evenodd" />
+                </svg>
+              ) : (
+                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
+                </svg>
+              )}
+            </button>
+            
+            <Link to="/contact" className="bg-gradient-to-r from-teal-500 to-blue-600 text-white px-4 py-2 lg:px-6 lg:py-2 rounded-full hover:shadow-lg transition-all duration-300 hover:scale-105" onClick={() => window.scrollTo(0, 0)}>
               Get Started
             </Link>
           </div>
 
           {/* Mobile menu button */}
-          <button
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden p-2"
-          >
-            <div className={`hamburger ${isMenuOpen ? 'active' : ''}`}>
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-          </button>
+          <div className="md:hidden flex items-center space-x-3">
+            {/* Mobile Dark Mode Toggle */}
+            <button
+              onClick={toggleDarkMode}
+              className="p-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300"
+              aria-label="Toggle dark mode"
+            >
+              {isDarkMode ? (
+                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clipRule="evenodd" />
+                </svg>
+              ) : (
+                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
+                </svg>
+              )}
+            </button>
+            
+            <button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="p-2"
+            >
+              <div className={`hamburger ${isMenuOpen ? 'active' : ''}`}>
+                <span className="dark:bg-gray-300"></span>
+                <span className="dark:bg-gray-300"></span>
+                <span className="dark:bg-gray-300"></span>
+              </div>
+            </button>
+          </div>
         </div>
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden bg-white/95 backdrop-blur-sm rounded-lg mt-2 p-4 shadow-lg">
+          <div className="md:hidden bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm rounded-lg mt-2 p-4 shadow-lg">
             <div className="flex flex-col space-y-4">
-              <Link to="/" className="nav-link-mobile" onClick={() => { setIsMenuOpen(false); window.scrollTo(0, 0); }}>Home</Link>
-              <Link to="/services" className="nav-link-mobile" onClick={() => { setIsMenuOpen(false); window.scrollTo(0, 0); }}>Services</Link>
-              <Link to="/portfolio" className="nav-link-mobile" onClick={() => { setIsMenuOpen(false); window.scrollTo(0, 0); }}>Portfolio</Link>
-              <Link to="/store" className="nav-link-mobile" onClick={() => { setIsMenuOpen(false); window.scrollTo(0, 0); }}>Store</Link>
-              <Link to="/about" className="nav-link-mobile" onClick={() => { setIsMenuOpen(false); window.scrollTo(0, 0); }}>About</Link>
-              <Link to="/contact" className="nav-link-mobile" onClick={() => { setIsMenuOpen(false); window.scrollTo(0, 0); }}>Contact</Link>
+              <Link to="/" className="nav-link-mobile dark:text-gray-300 dark:hover:text-teal-400 dark:border-gray-700" onClick={() => { setIsMenuOpen(false); window.scrollTo(0, 0); }}>Home</Link>
+              <Link to="/services" className="nav-link-mobile dark:text-gray-300 dark:hover:text-teal-400 dark:border-gray-700" onClick={() => { setIsMenuOpen(false); window.scrollTo(0, 0); }}>Services</Link>
+              <Link to="/portfolio" className="nav-link-mobile dark:text-gray-300 dark:hover:text-teal-400 dark:border-gray-700" onClick={() => { setIsMenuOpen(false); window.scrollTo(0, 0); }}>Portfolio</Link>
+              <Link to="/store" className="nav-link-mobile dark:text-gray-300 dark:hover:text-teal-400 dark:border-gray-700" onClick={() => { setIsMenuOpen(false); window.scrollTo(0, 0); }}>Store</Link>
+              <Link to="/about" className="nav-link-mobile dark:text-gray-300 dark:hover:text-teal-400 dark:border-gray-700" onClick={() => { setIsMenuOpen(false); window.scrollTo(0, 0); }}>About</Link>
+              <Link to="/contact" className="nav-link-mobile dark:text-gray-300 dark:hover:text-teal-400 dark:border-gray-700" onClick={() => { setIsMenuOpen(false); window.scrollTo(0, 0); }}>Contact</Link>
+              <Link to="/contact" className="bg-gradient-to-r from-teal-500 to-blue-600 text-white px-6 py-3 rounded-full text-center mt-4" onClick={() => { setIsMenuOpen(false); window.scrollTo(0, 0); }}>
+                Get Started
+              </Link>
             </div>
           </div>
         )}
