@@ -1394,7 +1394,7 @@ const ChatBot = () => {
 
       {/* Chat Window */}
       {isOpen && (
-        <div className="absolute bottom-16 right-0 w-80 h-96 bg-white rounded-lg shadow-2xl border border-gray-200 flex flex-col">
+        <div className="absolute bottom-16 left-0 w-80 h-96 bg-white rounded-lg shadow-2xl border border-gray-200 flex flex-col">
           {/* Header */}
           <div className="bg-gradient-to-r from-teal-500 to-blue-600 text-white p-4 rounded-t-lg">
             <h3 className="font-semibold">AI Assistant</h3>
