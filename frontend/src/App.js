@@ -116,12 +116,12 @@ const Navbar = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-6 lg:space-x-8">
-            <Link to="/" className="nav-link dark:text-gray-300 dark:hover:text-teal-400" onClick={() => window.scrollTo(0, 0)}>Home</Link>
-            <Link to="/services" className="nav-link dark:text-gray-300 dark:hover:text-teal-400" onClick={() => window.scrollTo(0, 0)}>Services</Link>
-            <Link to="/portfolio" className="nav-link dark:text-gray-300 dark:hover:text-teal-400" onClick={() => window.scrollTo(0, 0)}>Portfolio</Link>
-            <Link to="/store" className="nav-link dark:text-gray-300 dark:hover:text-teal-400" onClick={() => window.scrollTo(0, 0)}>Store</Link>
-            <Link to="/about" className="nav-link dark:text-gray-300 dark:hover:text-teal-400" onClick={() => window.scrollTo(0, 0)}>About</Link>
-            <Link to="/contact" className="nav-link dark:text-gray-300 dark:hover:text-teal-400" onClick={() => window.scrollTo(0, 0)}>Contact</Link>
+            <Link to="/" className="nav-link" onClick={() => window.scrollTo(0, 0)}>Home</Link>
+            <Link to="/services" className="nav-link" onClick={() => window.scrollTo(0, 0)}>Services</Link>
+            <Link to="/portfolio" className="nav-link" onClick={() => window.scrollTo(0, 0)}>Portfolio</Link>
+            <Link to="/store" className="nav-link" onClick={() => window.scrollTo(0, 0)}>Store</Link>
+            <Link to="/about" className="nav-link" onClick={() => window.scrollTo(0, 0)}>About</Link>
+            <Link to="/contact" className="nav-link" onClick={() => window.scrollTo(0, 0)}>Contact</Link>
             
             {/* Dark Mode Toggle */}
             <button
