@@ -866,10 +866,11 @@ const About = () => {
   return (
     <div className="about-page pt-20">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-teal-500 to-blue-600 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">About OpsVantage Digital</h1>
-          <p className="text-xl max-w-3xl mx-auto">
+      <section className="py-20 bg-gradient-to-br from-teal-500 to-blue-600 text-white relative">
+        <div className="absolute inset-0 bg-black bg-opacity-20"></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 hero-text">About OpsVantage Digital</h1>
+          <p className="text-xl max-w-3xl mx-auto hero-description">
             We're Auckland's premier AI-first digital agency, transforming businesses through innovative technology solutions
           </p>
         </div>
