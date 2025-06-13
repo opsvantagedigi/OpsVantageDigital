@@ -336,7 +336,7 @@ const Home = () => {
               { number: "5+", label: "Years Experience" },
               { number: "24/7", label: "Support Available" }
             ].map((stat, index) => (
-              <div key={index} className="animate-on-scroll">
+              <div key={index} style={{opacity: 1, transform: 'translateY(0)'}}>
                 <div className="text-4xl md:text-5xl font-bold mb-2 hero-text">{stat.number}</div>
                 <div className="text-lg hero-description">{stat.label}</div>
               </div>
