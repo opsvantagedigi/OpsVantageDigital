@@ -1030,9 +1030,9 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact-page pt-20">
+    <div className="contact-page pt-20" style={{display: 'block', visibility: 'visible', minHeight: '100vh'}}>
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-teal-500 to-blue-600 text-white relative">
+      <section className="py-20 bg-gradient-to-br from-teal-500 to-blue-600 text-white relative" style={{display: 'block', visibility: 'visible'}}>
         <div className="absolute inset-0 bg-black bg-opacity-20"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <h1 className="text-5xl md:text-6xl font-bold mb-6 hero-text">Get In Touch</h1>
@@ -1043,7 +1043,7 @@ const Contact = () => {
       </section>
 
       {/* Contact Information */}
-      <section className="py-20 bg-gray-50 min-h-screen">
+      <section className="py-20 bg-gray-50 min-h-screen" style={{display: 'block', visibility: 'visible'}}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Form */}
