@@ -27,6 +27,8 @@ const useScrollAnimation = () => {
 
 // Main App Component
 function App() {
+  useScrollAnimation();
+  
   return (
     <Router>
       <div className="App">
