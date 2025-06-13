@@ -973,18 +973,22 @@ const About = () => {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-800 mb-6">Meet Our Team</h2>
+            <h2 className="text-4xl font-bold text-gray-800 mb-6">Meet Our Expert Team</h2>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto font-medium">
-              Our diverse team of experts combines technical excellence with creative innovation to deliver exceptional results
+              Auckland's leading AI and digital transformation specialists, with experience from Google, Xero, Trade Me, and Rocket Lab
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {team.map((member, index) => (
               <div 
                 key={index} 
-                className="team-card animate-on-scroll"
-                style={{ animationDelay: `${index * 0.1}s` }}
+                className="team-card transition-transform duration-300 hover:scale-105"
+                style={{ 
+                  opacity: 1, 
+                  transform: 'translateY(0)',
+                  animationDelay: `${index * 0.1}s` 
+                }}
               >
                 <div className="relative overflow-hidden rounded-lg mb-4">
                   <img 
@@ -995,10 +999,15 @@ const About = () => {
                 </div>
                 <h3 className="text-xl font-bold text-gray-800 mb-2">{member.name}</h3>
                 <p className="text-teal-600 font-semibold mb-3">{member.role}</p>
-                <p className="text-gray-600 text-sm mb-4">{member.bio}</p>
+                <p className="text-gray-700 text-sm mb-3 font-medium">{member.bio}</p>
+                {member.expertise && (
+                  <p className="text-orange-600 text-xs font-semibold mb-4">
+                    Expertise: {member.expertise}
+                  </p>
+                )}
                 <a 
                   href={member.linkedin} 
-                  className="text-blue-600 hover:text-blue-800 transition-colors"
+                  className="text-blue-600 hover:text-blue-800 transition-colors text-sm font-medium"
                 >
                   Connect on LinkedIn →
                 </a>
