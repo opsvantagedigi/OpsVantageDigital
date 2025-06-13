@@ -217,7 +217,11 @@ const Home = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
               <Link 
                 to="/contact" 
-                className="cta-button primary-cta"
+                className="cta-button primary-cta text-lg px-10 py-5"
+                onClick={() => {
+                  // Scroll to top when navigating
+                  window.scrollTo(0, 0);
+                }}
               >
                 Start Your Transformation
                 <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
