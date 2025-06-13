@@ -1152,7 +1152,7 @@ const Contact = () => {
             </div>
 
             {/* Contact Information */}
-            <div className="animate-on-scroll">
+            <div className="animate-on-scroll bg-white p-8 rounded-lg shadow-lg">
               <h2 className="text-3xl font-bold text-gray-800 mb-8">Contact Information</h2>
               
               <div className="space-y-8">
