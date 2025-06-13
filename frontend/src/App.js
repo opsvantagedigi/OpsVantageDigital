@@ -477,15 +477,29 @@ const Services = () => {
                     />
                   </div>
                   <div className="lg:w-1/2 p-8">
-                    <div className="flex items-center mb-4">
-                      <span className="text-4xl mr-4">{service.icon}</span>
-                      <h3 className="text-2xl font-bold text-gray-800">{service.title}</h3>
+                    <div className="flex items-center justify-between mb-4">
+                      <div className="flex items-center">
+                        <span className="text-4xl mr-4">{service.icon}</span>
+                        <h3 className="text-xl font-bold text-gray-800">{service.title}</h3>
+                      </div>
+                      {service.highlight && (
+                        <span className="bg-orange-500 text-white text-xs px-2 py-1 rounded-full font-semibold">
+                          {service.highlight}
+                        </span>
+                      )}
                     </div>
-                    <p className="text-gray-700 mb-6 font-medium">{service.description}</p>
+                    <p className="text-gray-700 mb-4 font-medium">{service.description}</p>
+                    
+                    {service.timeline && (
+                      <p className="text-blue-600 text-sm font-semibold mb-4">
+                        Timeline: {service.timeline}
+                      </p>
+                    )}
+                    
                     <ul className="space-y-2 mb-6">
                       {service.features.map((feature, idx) => (
-                        <li key={idx} className="flex items-center text-gray-700">
-                          <svg className="w-5 h-5 text-teal-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                        <li key={idx} className="flex items-center text-gray-700 text-sm">
+                          <svg className="w-4 h-4 text-teal-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                             <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                           </svg>
                           {feature}
@@ -493,7 +507,12 @@ const Services = () => {
                       ))}
                     </ul>
                     <div className="flex items-center justify-between">
-                      <span className="text-2xl font-bold text-teal-600">{service.price}</span>
+                      <div>
+                        <span className="text-2xl font-bold text-teal-600">{service.price}</span>
+                        {service.timeline && (
+                          <p className="text-gray-500 text-xs">{service.timeline}</p>
+                        )}
+                      </div>
                       <Link 
                         to="/contact" 
                         className="bg-gradient-to-r from-teal-500 to-blue-600 text-white px-6 py-3 rounded-lg hover:shadow-lg transition-all duration-300"
