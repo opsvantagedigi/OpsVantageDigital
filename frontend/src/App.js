@@ -892,56 +892,41 @@ const DigitalStore = () => {
 
 // About Page
 const About = () => {
-  const team = [
-    {
-      name: "James Mitchell",
-      role: "Founder & CEO",
-      image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
-      bio: "Former Google AI researcher with 12+ years building enterprise AI solutions. Founded OpsVantage Digital to democratize AI for Auckland businesses.",
-      linkedin: "#",
-      expertise: "AI Strategy, Business Development"
-    },
-    {
-      name: "Dr. Sarah Kim",
-      role: "Chief Technology Officer",
-      image: "https://images.unsplash.com/photo-1666698809123-44e998e93f23",
-      bio: "PhD in Computer Science from University of Auckland. Led AI teams at Xero and Kiwibank. Expert in machine learning and cloud architecture.",
-      linkedin: "#",
-      expertise: "Machine Learning, Cloud Infrastructure"
-    },
-    {
-      name: "Michael Chen",
-      role: "Head of Digital Solutions",
-      image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
-      bio: "Full-stack architect with expertise in React, Node.js, and AWS. Previously built scalable platforms for ASB Bank and Spark Ventures.",
-      linkedin: "#",
-      expertise: "Web Development, System Architecture"
-    },
-    {
-      name: "Emma Thompson",
-      role: "AI Product Manager",
-      image: "https://images.unsplash.com/photo-1666698809123-44e998e93f23",
-      bio: "Former Product Manager at Trade Me and Rocket Lab. Specializes in translating complex AI capabilities into user-friendly business solutions.",
-      linkedin: "#",
-      expertise: "Product Strategy, UX/UI Design"
-    },
-    {
-      name: "Alex Rodriguez", 
-      role: "Senior AI Engineer",
-      image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
-      bio: "Machine learning engineer with expertise in NLP, computer vision, and predictive analytics. Built AI models for healthcare and fintech industries.",
-      linkedin: "#",
-      expertise: "NLP, Computer Vision"
-    },
-    {
-      name: "Lisa Wang",
-      role: "Client Success Manager",
-      image: "https://images.unsplash.com/photo-1666698809123-44e998e93f23",
-      bio: "Former McKinsey consultant specializing in digital transformation. Ensures our AI solutions deliver measurable ROI for every client.",
-      linkedin: "#",
-      expertise: "Client Relations, ROI Optimization"
-    }
-  ];
+  // Ajay Sidal - Founder Profile
+  const founder = {
+    name: "Ajay Sidal",
+    role: "Founder & CEO",
+    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
+    education: "Bachelor's Degree in Applied Management - Otago Polytechnic",
+    experience: "12+ Years Multi-Industry Experience",
+    location: "Grey Lynn, Auckland",
+    email: "asidal@outlook.com",
+    phone: "022 039 2088",
+    bio: "With over twelve years of diverse experience across banking, healthcare, logistics, and automotive industries, I bring a unique blend of operational excellence and technology expertise to digital transformation.",
+    specialties: [
+      "Technology & Operations Management",
+      "Business Process Optimization", 
+      "Customer Service Excellence",
+      "Data Analysis & Reporting",
+      "Website Design & Development",
+      "CRM & System Integration"
+    ],
+    keyAchievements: [
+      "Led Westpac's Internet Payments Project for e-merchants in Fiji (2008)",
+      "Awarded Retail Recognition Award for exceptional leadership (2009)",
+      "Successfully transformed underperforming branch operations",
+      "12+ years banking & financial services expertise",
+      "Managed operations across multiple automotive luxury brands",
+      "COVID-19 Vaccine program coordination for Whakarongorau Aotearoa"
+    ],
+    industries: [
+      "Banking & Financial Services (Westpac - 12 years)",
+      "Healthcare (Te Whatu Ora, Bupa NZ)",
+      "Automotive (Armstrong Motor Group - Luxury brands)",
+      "Telecommunications (Ventia Telco projects)",
+      "Investment Services (ANZ KiwiSaver)"
+    ]
+  };
 
   return (
     <div className="about-page pt-20">
