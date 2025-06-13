@@ -181,12 +181,12 @@ const Navbar = () => {
         {isMenuOpen && (
           <div className="md:hidden bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm rounded-lg mt-2 p-4 shadow-lg">
             <div className="flex flex-col space-y-4">
-              <Link to="/" className="nav-link-mobile dark:text-gray-300 dark:hover:text-teal-400 dark:border-gray-700" onClick={() => { setIsMenuOpen(false); window.scrollTo(0, 0); }}>Home</Link>
-              <Link to="/services" className="nav-link-mobile dark:text-gray-300 dark:hover:text-teal-400 dark:border-gray-700" onClick={() => { setIsMenuOpen(false); window.scrollTo(0, 0); }}>Services</Link>
-              <Link to="/portfolio" className="nav-link-mobile dark:text-gray-300 dark:hover:text-teal-400 dark:border-gray-700" onClick={() => { setIsMenuOpen(false); window.scrollTo(0, 0); }}>Portfolio</Link>
-              <Link to="/store" className="nav-link-mobile dark:text-gray-300 dark:hover:text-teal-400 dark:border-gray-700" onClick={() => { setIsMenuOpen(false); window.scrollTo(0, 0); }}>Store</Link>
-              <Link to="/about" className="nav-link-mobile dark:text-gray-300 dark:hover:text-teal-400 dark:border-gray-700" onClick={() => { setIsMenuOpen(false); window.scrollTo(0, 0); }}>About</Link>
-              <Link to="/contact" className="nav-link-mobile dark:text-gray-300 dark:hover:text-teal-400 dark:border-gray-700" onClick={() => { setIsMenuOpen(false); window.scrollTo(0, 0); }}>Contact</Link>
+              <Link to="/" className="nav-link-mobile" onClick={() => { setIsMenuOpen(false); window.scrollTo(0, 0); }}>Home</Link>
+              <Link to="/services" className="nav-link-mobile" onClick={() => { setIsMenuOpen(false); window.scrollTo(0, 0); }}>Services</Link>
+              <Link to="/portfolio" className="nav-link-mobile" onClick={() => { setIsMenuOpen(false); window.scrollTo(0, 0); }}>Portfolio</Link>
+              <Link to="/store" className="nav-link-mobile" onClick={() => { setIsMenuOpen(false); window.scrollTo(0, 0); }}>Store</Link>
+              <Link to="/about" className="nav-link-mobile" onClick={() => { setIsMenuOpen(false); window.scrollTo(0, 0); }}>About</Link>
+              <Link to="/contact" className="nav-link-mobile" onClick={() => { setIsMenuOpen(false); window.scrollTo(0, 0); }}>Contact</Link>
               <Link to="/contact" className="bg-gradient-to-r from-teal-500 to-blue-600 text-white px-6 py-3 rounded-full text-center mt-4" onClick={() => { setIsMenuOpen(false); window.scrollTo(0, 0); }}>
                 Get Started
               </Link>
