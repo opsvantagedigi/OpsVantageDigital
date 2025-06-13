@@ -1302,7 +1302,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           {/* Logo and Description */}
           <div className="col-span-1 md:col-span-2">
-            <Link to="/" className="flex items-center space-x-3 mb-6">
+            <Link to="/" className="flex items-center space-x-3 mb-6" onClick={() => window.scrollTo(0, 0)}>
               <div className="flex items-center">
                 <span className="text-3xl font-bold text-teal-400">Ops</span>
                 <span className="text-3xl font-bold text-orange-400">Vantage</span>
