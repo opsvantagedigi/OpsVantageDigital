@@ -1075,19 +1075,19 @@ const About = () => {
       </section>
 
       {/* Team Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-16 lg:py-20 bg-gray-50 dark:bg-gray-800 transition-colors duration-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-800 mb-6">Meet the Founder</h2>
-            <p className="text-xl text-gray-700 max-w-3xl mx-auto font-medium">
+          <div className="text-center mb-12 lg:mb-16">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 dark:text-white mb-4 lg:mb-6">Meet the Founder</h2>
+            <p className="text-lg lg:text-xl text-gray-700 dark:text-gray-300 max-w-3xl mx-auto font-medium">
               Driven by 12+ years of multi-industry expertise and a passion for digital transformation
             </p>
           </div>
 
           {/* Founder Profile */}
           <div className="max-w-4xl mx-auto">
-            <div className="bg-gradient-to-r from-teal-50 to-blue-50 rounded-2xl p-8 shadow-lg">
-              <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
+            <div className="bg-gradient-to-r from-teal-50 to-blue-50 dark:from-gray-700 dark:to-gray-600 rounded-2xl p-6 lg:p-8 shadow-lg">
+              <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8 items-center"  style={{ opacity: 1, transform: 'translateY(0)' }}>
                 {/* Profile Image */}
                 <div className="lg:col-span-1 text-center flex flex-col items-center justify-center w-full">
                   <div className="relative inline-block mx-auto" style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
