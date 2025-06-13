@@ -333,18 +333,18 @@ const Home = () => {
       </section>
 
       {/* Services Preview */}
-      <section className="py-20 bg-white">
+      <section className="py-16 lg:py-20 bg-white dark:bg-gray-900 transition-colors duration-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16" style={{opacity: 1, transform: 'translateY(0)'}}>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              <span className="text-gray-800">Premium Digital Services</span>
+          <div className="text-center mb-12 lg:mb-16" style={{opacity: 1, transform: 'translateY(0)'}}>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 lg:mb-6">
+              <span className="text-gray-800 dark:text-white">Premium Digital Services</span>
             </h2>
-            <p className="text-xl text-gray-700 max-w-3xl mx-auto font-medium">
+            <p className="text-lg lg:text-xl text-gray-700 dark:text-gray-300 max-w-3xl mx-auto font-medium">
               From AI integration to cutting-edge web development, we deliver solutions that drive real results
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
             {[
               {
                 icon: "🤖",
@@ -395,10 +395,10 @@ const Home = () => {
                 <div className={`service-icon bg-gradient-to-r ${service.color}`}>
                   {service.icon}
                 </div>
-                <h3 className="text-xl font-bold mb-3 text-gray-800 group-hover:text-teal-600 transition-colors">
+                <h3 className="text-lg sm:text-xl font-bold mb-3 text-gray-800 dark:text-white group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">
                   {service.title}
                 </h3>
-                <p className="text-gray-700 leading-relaxed font-medium">
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-sm sm:text-base">
                   {service.description}
                 </p>
               </div>
