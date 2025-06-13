@@ -248,9 +248,9 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 animate-on-scroll">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              <span className="text-gradient">Premium Digital Services</span>
+              <span className="text-gray-800">Premium Digital Services</span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-700 max-w-3xl mx-auto font-medium">
               From AI integration to cutting-edge web development, we deliver solutions that drive real results
             </p>
           </div>
