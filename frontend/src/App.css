@@ -112,9 +112,13 @@ body {
   color: #111827 !important;
 }
 
-/* Navigation Styles */
+/* Navigation Styles - Updated to Orange */
 .nav-link {
-  @apply text-gray-700 hover:text-teal-600 font-medium transition-colors duration-300 relative;
+  @apply text-orange-600 hover:text-orange-700 font-medium transition-colors duration-300 relative;
+}
+
+.dark .nav-link {
+  @apply text-orange-400 hover:text-orange-300;
 }
 
 .nav-link::after {
@@ -124,7 +128,7 @@ body {
   height: 2px;
   bottom: -4px;
   left: 50%;
-  background: linear-gradient(90deg, var(--color-teal), var(--color-blue));
+  background: linear-gradient(90deg, #f97316, #ea580c);
   transition: all 0.3s ease;
   transform: translateX(-50%);
 }
@@ -134,7 +138,11 @@ body {
 }
 
 .nav-link-mobile {
-  @apply text-gray-700 hover:text-teal-600 font-medium py-2 border-b border-gray-100 transition-colors duration-300;
+  @apply text-orange-600 hover:text-orange-700 font-medium py-2 border-b border-gray-100 transition-colors duration-300;
+}
+
+.dark .nav-link-mobile {
+  @apply text-orange-400 hover:text-orange-300 border-gray-700;
 }
 
 /* Hamburger Menu */
