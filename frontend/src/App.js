@@ -481,6 +481,12 @@ const Services = () => {
                       <Link 
                         to="/contact" 
                         className="bg-gradient-to-r from-teal-500 to-blue-600 text-white px-6 py-3 rounded-lg hover:shadow-lg transition-all duration-300"
+                        onClick={() => {
+                          console.log('Get Quote clicked');
+                          setTimeout(() => {
+                            window.scrollTo(0, 0);
+                          }, 100);
+                        }}
                       >
                         Get Quote
                       </Link>
